@@ -1,0 +1,72 @@
+ 
+  .quote-box {
+    background-color: hsla(195, 53%, 66%, 0.9);
+    width: 700px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  
+  
+  #button-q {
+    background-color: hsla(195, 53%, 66%, 0.7);
+    border: solid 1px white;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.7em;
+    color: white;
+  }
+  
+  #footer-q {
+   border-top: solid 1px white;
+   padding: 10px;
+   margin-top: 1em;
+   
+  }
+  
+  #button-q:hover, .fab-q:hover {
+    cursor:pointer;
+    background-color: hsl(195, 53%, 60%);
+  }
+  
+  .author {
+    text-align: right;
+  }
+  
+  .quote:first-letter {
+    font-size: 1.1rem;
+  }
+  
+  .quote {
+    font-weight: 300;
+    height: 3rem;
+    padding-bottom: 4rem;
+    
+  }
+  
+  .fab-q {
+    color: white;
+    padding : 10px;
+    border-radius: 15px;
+    border: solid 1px white;
+    
+  }
+  
+  
+  .footer-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 800px) {
+    .quote-box {
+      margin: auto;
+      width: 95%;
+    }
+    .quote {
+      font-size: 1.1rem;
+    }
+    
+  }

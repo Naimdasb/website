@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <nav>
+        <div class='logo'>
+            <h1>Hyrs</h1>
+            <div class='menu_btn'>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class='menu_ul'>
+            <ul>
+                <li><a href="#main" target="">Home</a></li>
+                <li><a href="#about" target="">About me</a></li>
+                <li><a href="#contact" target="">Contact me</a></li>
+            </ul>
+        </div>   
+    </nav>
+
+    <section id='main' class='main'>
+        <div class='container_main'>
+            <div class='main_heading'>
+                <h1>Valente Douglas</h1>
+                <p class='main_subtitle'>Fullstack Developer</p>
+            </div>
+            <div class='main_subheading'>
+                <button class='main_btn'>More About Me</button>
+                <div id='root'></div>
+            </div>
+        </div>
+    </section>
+
+    <section id='about' class='about'>
+        <p class='about_title'>Something About Me</p>
+        <div class='container_about'>      
+            <div class='about_box'>
+                <div class='about_profile'>
+                    <p>Valente Douglas</p>
+                    <img class='about_img' src="./img/img.jpg" alt="">
+                </div>
+                <article class="about_article">
+                    <p>Greetings,</p>
+                    <p>My name is Douglas and I’m a Fullstack Developer.</p>
+                    <p>I’m from Buenos Aires, Argentina and I love tea, movies and nature.</p>
+                    <p>My native language is Spanish but as you see, I can speak English.</p>
+
+                    <p>I started to code since I was a teenager. My first programming language was Basic, then turned to
+                        C++ during my career and a little of Java. </p>
+
+                    <p>Anyway. talking about my current developer skills, I’m currently working with the MERN Stack.</p>
+                    
+                    <p>If you are not familiar with it, it’s just a fancy name to name MongoDB, Express JS, React JS and
+                        Node JS.</p>
+
+                    <p>Also, I’m familiar with the latest JavaScript ES6+ syntax and aiming to learn Python at some
+                        point.</p>
+
+                    <p>If you are interested to get in touch with me, please send me an email or check out my social
+                        media.</p>
+                    <p>We can create meeting on Skype or Zoom if you prefer. </p>
+
+                    <p>See you!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id='contact' class='contact'>
+        <div class='container_contact'>
+            <div class='dialogue'>
+                <p class='dialogue_title'>Want to contact me?</p>
+                <p class='dialogue_subtitle'>Please send me a message or contact me on my social media.</p>
+                <div>
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-github fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+            </div>
+            <div class='form' >
+                <form action='/form' method='post'>
+                <p>Send me a message</p><br>
+                <label>Name: </label>
+                    <input type="text" name='name' required>
+                <br>
+                <label>Email: </label>
+                    <input type="email" name='email' required>
+                <br>
+                <label>Subject: </label>
+                    <input type="text" name='subject' required>
+                <br>
+                <label>Your message: </label>
+                    <textarea name='message' id="" cols="30" rows="5" required></textarea>
+                <br>
+                
+                <button class='form_btn' type='submit'>Send</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class='footer'>
+        <p>&copy 2020 All rights reserved to Valente Douglas</p>
+    </footer>
+
+    <script src='./js/main.js'></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel" src="./js/app.js"></script>
+</body>
+
+</html>

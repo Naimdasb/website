@@ -1,0 +1,412 @@
+/* Variables and global settings */
+:root {
+  --main-green: rgba(105, 216, 125, 0.9);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color:rgba(37, 32, 32, 1);
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    padding: 1rem 0 1rem 0;
+}
+
+.menu_ul {
+    width: 90%;
+    margin: auto;
+    list-style-type: none;
+    text-align: left;
+    height: 0;
+    display: none;
+}
+
+
+.appear {
+    height: 200px;
+    display: block;    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 1rem 0 1rem 0;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    width: 100%;
+    
+}
+
+li a:hover {
+    color:gray;
+}
+
+.logo {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu Icon */
+
+.menu_btn {
+    width: 35px;
+    height: 50%;
+    margin-right: 10px;
+}
+
+
+.bar {
+    width: 80%;
+    background-color: white;
+    height: 4px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+
+.bar_a {
+    animation: anim_a 0.7s forwards;
+}
+
+.bar_c {
+    animation: anim_c 0.7s forwards;
+}
+
+.bar_b {
+    animation: anim_b 0.7s forwards;
+}
+
+
+@keyframes anim_b {
+    from {
+        opacity: 1;
+    }
+
+    to {
+
+        opacity: 0;
+    }
+}
+
+@keyframes anim_a {
+    from {
+        transform: rotate(0deg)  translateY(0px) ;    
+
+    }
+
+    to {
+        transform: rotate(45deg) translateY(14px) ;
+        
+    }
+}
+
+@keyframes anim_c {
+    from {
+        transform: rotate(0deg) translateY(0px);
+    }
+
+    to {
+        transform: rotate(-45deg) translateY(-14px);
+    }
+}
+
+/* Main styles */
+
+.main {
+    margin-top: 7rem;
+    background-image: url('../img/Rohit.jpg');
+    background-size: cover;
+    height: 1024px;
+    color: white;
+}
+
+.container_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.main_heading {
+    background-color: var(--main-green);
+    width: 95%;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+
+}
+
+.main_heading h1 {
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.main_subtitle {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+}
+
+.main_subheading {
+    text-align: center;
+}
+
+.main_btn {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(81, 76, 76, 1);
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline:none;
+    border:none;
+    
+}
+
+.main_btn:hover {
+    cursor:pointer;
+    background-color: rgba(176, 76, 253, 0.89);
+}
+
+/* About styles */
+
+.about { 
+    background-image: url('../img/gottardi.jpg');
+    background-size: cover;
+    height: 1024px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_about {
+    padding: 2rem 1rem; 
+    width: 90%;
+    background-color: rgba(81, 76, 76, 0.6);
+    border-radius: 10px;
+}
+
+.about_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_title {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.about_profile p {
+    font-size: 2rem;
+    
+}
+
+.about_img {
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;    
+}
+
+.about_article p {
+    font-size: 1.1rem;
+}
+
+
+/* Contact Styles */ 
+
+.contact { 
+    background-image: url('../img/andreas.jpg');
+    background-size: cover;
+    height: 1024px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_contact {
+    width: 90%;
+}
+
+.dialogue {
+    background-color: rgba(81, 76, 76, 0.6);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.dialogue_title {
+    font-size: 2rem;
+}
+
+.dialogue_subtitle {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0 2rem 0;
+}
+
+.fab {
+    margin-left: 1rem;
+}
+
+.form {
+    background-color: rgba(146, 230, 118, 0.612);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.form p {
+    font-size: 2rem;
+}
+
+.form label {
+    font-size: 1.3rem;
+    
+    
+}
+
+input,textarea {
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+}
+
+
+.form_btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(81, 76, 76, 1);
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline:none;
+    border:none;
+    
+    width: 100%;
+}
+
+.form_btn:hover {
+    cursor:pointer;
+    background-color: rgba(176, 76, 253, 0.589);
+}
+
+.footer {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0.4rem;
+}
+
+@media (min-width: 800px) {
+    .menu_btn {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu_ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .logo {
+        justify-content: space-around;    
+    }
+
+    li a {
+        
+        padding: 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    .appear {
+        height: 0;
+    }
+
+    .main,.about,.contact {
+        margin:auto;
+        max-width: 1440px;
+    }
+
+    .container_contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dialogue, .form {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .container_main, .container_about,  {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    
+    
+}
+
